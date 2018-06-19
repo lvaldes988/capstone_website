@@ -1,0 +1,105 @@
+/*import font from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Pacifico|Source+Sans+Pro');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
+
+/* 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+dark blue #1720B2
+light blue #545DFF
+medium blue #3A45FF
+bronw #B2A056
+ellow #FFD73A
+
+*/
+/*get some colors from color adobe.com*/
+
+
+body{
+margin:0;
+}
+
+header{
+    background:linear-gradient(#1720B2, #545DFF);
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+       
+}
+
+#logo{
+    height: 80%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+h1, h2{
+    margin: 0;
+    position: absolute;
+    left: 187px;
+    top:18px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2{
+    top:60px; 
+    font-family: 'Pacifico', cursive;
+}
+
+#hamber{
+    position: absolute;
+    right: 30px;
+    height: 100%;
+    top: 10px;
+}
+
+/*____________________________________________MAIN NAV BAR*/
+
+#navbar{
+    
+    width: 250px;
+    background: linear-gradient(#545DFF, #1720B2);
+    position: fixed;
+    right: 0;
+    top:150px;
+}
+
+nav a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Josefine Sans', sans-serif;
+    text-shadow: 2px 2px black;
+    font-size: 120%;
+    border-bottom: solid 1px navy;
+
+}
+
+nav a :hover{
+    background: lightblue
+}
+/*____________________________________________footer*/
+
+footer{
+    position: fixed;
+    z-index: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    background: pink;
+}
