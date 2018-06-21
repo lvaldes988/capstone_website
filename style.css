@@ -1,7 +1,7 @@
 /*import font from google fonts*/
+
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Pacifico|Source+Sans+Pro');
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
-
 /* 
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Pacifico', cursive;
@@ -15,64 +15,63 @@ bronw #B2A056
 ellow #FFD73A
 
 */
+
 /*get some colors from color adobe.com*/
 
-
-body{
-margin:0;
+body {
+    margin: 0;
 }
 
-header{
-    background:linear-gradient(#1720B2, #545DFF);
+header {
+    background: linear-gradient(#1720B2, #545DFF);
     height: 150px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-       
 }
 
-#logo{
-    height: 80%;
+#logo {
+    height: 100%;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
 }
 
-h1, h2{
+h1,
+h2 {
     margin: 0;
     position: absolute;
-    left: 187px;
-    top:18px;
+    left: 220px;
+    top: 18px;
     color: white;
     text-shadow: 2px 2px black;
 }
 
-h1{
+h1 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-h2{
-    top:60px; 
+h2 {
+    top: 60px;
     font-family: 'Pacifico', cursive;
 }
 
-#hamber{
+#hamber {
     position: absolute;
-    right: 30px;
+    right: -27px;
     height: 100%;
-    top: 10px;
+    top: 30px;
 }
 
 /*____________________________________________MAIN NAV BAR*/
 
-#navbar{
-    
+#navbar {
     width: 250px;
     background: linear-gradient(#545DFF, #1720B2);
     position: fixed;
     right: 0;
-    top:150px;
+    top: 150px;
 }
 
 nav a {
@@ -86,20 +85,76 @@ nav a {
     text-shadow: 2px 2px black;
     font-size: 120%;
     border-bottom: solid 1px navy;
-
 }
 
-nav a :hover{
+nav a :hover {
     background: lightblue
 }
+#navbar.hidden{
+    right: -250px;
+}
+#navbar.visible {
+    right: 0;
+}
+
+/*____________________________________________article*/
+
+article {
+    font-family: 'Open Sans', sans-serif;
+    /*line-height: 150%;*/
+}
+
+/*_______________________img and videos*/
+article img,
+article video,
+article iframe {
+    max-width: 100%;
+
+}
+
 /*____________________________________________footer*/
 
-footer{
+footer {
     position: fixed;
     z-index: auto;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 36px;
-    background: pink;
+    line-height: 36px;
+    background: linear-gradient(#545DFF, #1720B2);
+    text-align: center;
+    font-size: 20px;
+}
+
+footer a {
+    color: steelblue;
+    text-decoration: none;
+    letter-spacing: 13px;
+}
+
+/*___________________wide screen*/
+
+@media screen and (min-width:500px) {
+    #hamber {
+        display: none;
+    }
+    #nav {
+        display: block;
+    }
+    article{
+        padding: 168px 256px 98px 29px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #hamber {
+        display: block;
+    }
+    #navbar {
+        right: -250px;
+    }
+    article{
+        padding: 90px 20px 90px 20px;
+    }
 }
