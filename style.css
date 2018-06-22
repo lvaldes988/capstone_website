@@ -18,6 +18,8 @@ ellow #FFD73A
 
 /*get some colors from color adobe.com*/
 
+
+
 body {
     margin: 0;
 }
@@ -50,6 +52,7 @@ h2 {
 
 h1 {
     font-family: 'Josefin Sans', sans-serif;
+    animation: 2s ease-out 0s 1 fadein;
 }
 
 h2 {
@@ -95,6 +98,7 @@ nav a :hover {
 }
 #navbar.visible {
     right: 0;
+    transition: 500ms;
 }
 
 /*____________________________________________article*/
@@ -156,5 +160,14 @@ footer a {
     }
     article{
         padding: 90px 20px 90px 20px;
+    }
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
