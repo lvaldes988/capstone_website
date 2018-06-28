@@ -8,8 +8,8 @@ font-family: 'Pacifico', cursive;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 
-dark blue #1720B2
-light blue #545DFF
+light pink #FFB4E4
+dark pink #FF179F
 medium blue #3A45FF
 bronw #B2A056
 ellow #FFD73A
@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    background: linear-gradient(#1720B2, #545DFF);
+    background: linear-gradient(#FFB4E4, #FF179F);
     height: 150px;
     position: fixed;
     top: 0;
@@ -38,6 +38,7 @@ header {
     position: absolute;
     top: 0px;
     left: 0px;
+    width: 250px;
 }
 
 h1,
@@ -51,8 +52,12 @@ h2 {
 }
 
 h1 {
-    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Pacifico', cursive;
     animation: 2s ease-out 0s 1 fadein;
+    font-size: 56px;
+    left: 352px;
+    top: 35px;
+    position: absolute
     
 }
 
@@ -72,7 +77,7 @@ h2 {
 
 #navbar {
     width: 250px;
-    background: linear-gradient(#545DFF, #1720B2);
+    background: linear-gradient(#FFB4E4, #FF179F);
     position: fixed;
     right: 0;
     top: 150px;
@@ -92,7 +97,7 @@ nav a {
 }
 
 nav a :hover {
-    background: lightblue
+    background: lightblue;
 }
 #navbar.hidden{
     right: -250px;
@@ -103,8 +108,47 @@ nav a :hover {
 }
 
 nav a.currentpage{
-    background-color:#545DFF;
+    background-color:rgb(238, 149, 219);
 }
+/*____________________________________________main container 256 x 256*/
+
+div.main_container {
+    border: ridge 2px magenta;
+    margin-top: 126px;
+    margin-right: 250px;
+
+
+}
+
+
+/*____________________________________________Testimony
+
+div#adamary {
+    border: ridge 2px magenta;
+    position: absolute;    
+}
+div#angeline {
+    border: ridge 2px magenta;
+    position: absolute;    
+}
+div#barbara {
+    border: ridge 2px magenta;
+    position: absolute;    
+}
+div#olivia {
+    border: ridge 2px magenta;
+    position: absolute;    
+}
+div#robin {
+    border: ridge 2px magenta;
+    position: absolute;    
+}
+div#sophia {
+    border: ridge 2px magenta;
+    position: absolute;    
+}
+*/
+
 
 /*____________________________________________article*/
 
@@ -131,7 +175,7 @@ footer {
     width: 100%;
     height: 36px;
     line-height: 36px;
-    background: linear-gradient(#545DFF, #1720B2);
+    background: linear-gradient(#FFB4E4, #FF179F);
     text-align: center;
     font-size: 20px;
 }
