@@ -44,14 +44,14 @@ h1,
 h2 {
     margin: 0;
     position: absolute;
-    left: 220px;
-    top: 18px;
+    left: 430px;
+    top: 58px;
     color: white;
     text-shadow: 2px 2px black;
 }
 
 h1 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cedarville Cursive', cursive;
     animation: 2s ease-out 0s 1 fadein;
     
 }
@@ -100,6 +100,10 @@ nav a :hover {
 #navbar.visible {
     right: 0;
     transition: 500ms;
+}
+
+nav a.currentpage{
+    background-color:#545DFF;
 }
 
 /*____________________________________________article*/
